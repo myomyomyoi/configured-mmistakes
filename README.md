@@ -21,7 +21,7 @@ https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
     - [高機能ホスティングサービスNetlifyについて調べて使ってみた](https://qiita.com/TakahiRoyte/items/b7c4d1581df1a17a93fb#step1re-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E8%BF%BD%E5%8A%A0)
     - `Site settings` > `Identity` の設定を行う。
 
-## 概要
+## ファイル/ディレクトリ概要
 ### _data/navigation.yml
 このファイルを編集してナビゲーションバーのカスタマイズが可能です。
 
@@ -43,3 +43,20 @@ Netlify CMSから投稿した画像はこのディレクトリに保存されま
 ### admin/config.yml
 Netlify CMSの設定ファイルです。編集時にどのオプションを表示するかや、アップロードした画像の保存先を設定することが出来ます。
 詳しくは[公式ドキュメント](https://www.netlifycms.org/docs/add-to-your-site/#configuration)を参照して下さい。
+
+## ページの設定項目
+
+| 項目 | 概要 | 設定方法 |
+| --- | --- | --- |
+| title | タイトル | "About Me"など |
+| layout | ページレイアウトの設定 | single, splashなど |
+| permalink | 記事のリンク先 | `/about`など
+| author_profile | 記事の左側にプロフィールを表示するか | true, false |
+| toc | 目次を表示するか | true, false |
+| read_time | 記事を読むのに掛かる時間の目安を表示するか | true, false |
+| comments | コメント出来るようにするか | true, false |
+| share | 共有ボタンを表示するか | true, false |
+| related | 関連記事を表示するか | true, false |
+
+`_config.yml`からデフォルトの設定を変更することが出来ます。
+
